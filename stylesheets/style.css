@@ -11,10 +11,11 @@ body {
 }
 
 h1 {
+  font-size: 45px;
   display: block;
   text-align: center;
   text-decoration: underline;
-  padding: 5%;
+  padding: 5% 5% 0;
 }
 
 header nav {
@@ -32,8 +33,8 @@ header ul li {
   width: 48%;
   display: inline;
   text-align: center;
-  margin: 1%;
-  margin-bottom: 5%;
+  margin: 0 1%;
+  margin-top: 5%;
 }
 
 header ul li a {
