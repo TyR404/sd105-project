@@ -48,6 +48,7 @@ header ul li a {
 .home-Logo-container {
   position: relative;
   text-align: center;
+  margin-bottom: 5%;
 }
 
 .home-Logo-background {
@@ -64,4 +65,44 @@ header ul li a {
   border: #4d4138 solid 1px;
   padding: 2% 7.5%;
   border-radius: 20px;
+}
+
+h2 {
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30%;
+}
+
+.home-h2 {
+  margin-bottom: 30%;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  padding-top: 15%;
+  border: #4d4138 solid 1px;
+}
+
+.icon-container {
+  z-index: 10;
+  background-color: #eeeeee;
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  bottom: 65%;
+  transform: translate(-50%, -50%);
+  border: #4d4138 solid 1px;
+  padding: 4%;
+  border-radius: 50px;
+}
+
+.icon {
+  width: 100%;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
 }
