@@ -79,30 +79,40 @@ h2 {
 }
 
 .card {
+  display: block;
   position: relative;
   text-align: center;
   padding-top: 15%;
   border: #4d4138 solid 1px;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 5em;
 }
 
 .icon-container {
-  z-index: 10;
   background-color: #eeeeee;
-  width: 20%;
-  position: absolute;
-  left: 50%;
-  bottom: 65%;
-  transform: translate(-50%, -50%);
   border: #4d4138 solid 1px;
-  padding: 4%;
-  border-radius: 50px;
+  height: 75px;
+  width: 75px;
+  font-size: 17px;
+  padding: 1em;
+  border-radius: 45px;
+  position: absolute;
+  top: -12%;
+  transform: translateY(-50%);
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .icon {
-  width: 100%;
+  filter: invert(18%) sepia(3%) saturate(4585%) hue-rotate(343deg)
+    brightness(100%) contrast(74%);
+  width: 2em;
+  height: 2em;
 }
 
 h3 {
   font-size: 30px;
   font-weight: 500;
+  margin-bottom: 0.25em;
 }
