@@ -184,6 +184,8 @@ footer {
 
 footer hr {
   color: #eeeeee;
+  width: 90%;
+  margin: auto;
 }
 
 footer nav {
