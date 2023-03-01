@@ -224,3 +224,43 @@ footer img {
   display: block;
   margin: auto;
 }
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  header ul li a {
+    font-size: 20px;
+  }
+
+  .logo {
+    bottom: 35%;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
+  .home-h2 {
+    margin-bottom: 10%;
+  }
+
+  .icon-container {
+    top: -10%;
+  }
+
+  .card {
+    padding-top: 7.5%;
+  }
+
+  .card p {
+    padding: 0% 5%;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 45px;
+    margin-bottom: 0.5em;
+  }
+}
