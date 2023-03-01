@@ -76,7 +76,7 @@ h2 {
 }
 
 .home-h2 {
-  margin-bottom: 30%;
+  margin-bottom: 20%;
 }
 
 .card {
@@ -99,7 +99,7 @@ h2 {
   padding: 1em;
   border-radius: 45px;
   position: absolute;
-  top: -12%;
+  top: -8.5%;
   transform: translateY(-50%);
   right: 50%;
   transform: translateX(50%);
@@ -116,6 +116,24 @@ h3 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 0.25em;
+}
+
+.card p {
+  margin-bottom: 1em;
+  padding: 0% 10%;
+}
+
+.card a {
+  display: block;
+  margin-bottom: 1em;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  transform: scale(1.1);
 }
 
 .back-to-top {
