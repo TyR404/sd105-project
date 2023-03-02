@@ -92,6 +92,7 @@ h2 {
   width: 80%;
   margin: 0 10%;
   margin-bottom: 5em;
+  border-radius: 15px;
 }
 
 .icon-container {
@@ -256,6 +257,10 @@ footer img {
     top: -10%;
   }
 
+  .learn-more {
+    padding: 0% 10%;
+  }
+
   .card {
     padding-top: 7.5%;
   }
@@ -357,7 +362,7 @@ footer img {
     position: relative;
     z-index: 1;
     padding-bottom: 20em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
   }
 
   .background-image::before {
@@ -464,7 +469,8 @@ footer img {
   }
 
   .learn-more {
-    grid-template-columns: 30% auto;
+    padding: 0% 10%;
+    grid-template-columns: auto;
     grid-column-gap: 4em;
     margin-bottom: 6em;
   }
@@ -493,5 +499,19 @@ footer img {
     grid-row: 2;
     grid-column-start: 3;
     grid-column-end: 4;
+  }
+}
+
+@media only screen and (min-width: 1868px) {
+  .learn-more {
+    grid-column-gap: 8em;
+  }
+
+  nav {
+    width: 40%;
+  }
+
+  .background-image {
+    margin-bottom: 6em;
   }
 }
