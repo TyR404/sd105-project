@@ -461,6 +461,14 @@ footer img {
     margin-bottom: 15em;
   }
 
+  header ul {
+    top: 60%;
+  }
+
+  header ul li a {
+    font-size: 25px;
+  }
+
   .background-image {
     position: relative;
     z-index: 1;
