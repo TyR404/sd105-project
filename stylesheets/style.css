@@ -396,4 +396,43 @@ footer img {
   .back-to-top {
     z-index: 10;
   }
+
+  footer {
+    padding: 1em 5% 2%;
+  }
+
+  footer hr {
+    width: 100%;
+  }
+
+  footer nav {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer ul {
+    flex-wrap: unset;
+    margin-bottom: 2em;
+    align-items: center;
+  }
+
+  footer ul li {
+    margin-top: 1em;
+  }
+
+  footer img {
+    width: 3em;
+  }
 }
+
+/* 
+
+
+footer img {
+  filter: invert(98%) sepia(8%) saturate(372%) hue-rotate(224deg)
+    brightness(109%) contrast(87%);
+
+  width: 20%;
+  display: block;
+  margin: auto; */
