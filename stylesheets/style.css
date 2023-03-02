@@ -344,7 +344,6 @@ footer img {
   .logo {
     position: unset;
     transform: unset;
-    opacity: 1;
     width: 3.5em;
     margin: auto;
     padding: 0.5em 0;
@@ -426,13 +425,16 @@ footer img {
   }
 }
 
-/* 
+@media only screen and (min-width: 1440px) {
+  header {
+    padding: 1% 4%;
+    margin-bottom: 15em;
+  }
 
-
-footer img {
-  filter: invert(98%) sepia(8%) saturate(372%) hue-rotate(224deg)
-    brightness(109%) contrast(87%);
-
-  width: 20%;
-  display: block;
-  margin: auto; */
+  .background-image {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 26em;
+    margin-bottom: 2em;
+  }
+}
