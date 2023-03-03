@@ -588,7 +588,7 @@ h3::before {
   transform-origin: bottom right;
 }
 
-h3:hover::before {
+.card:hover h3::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -613,26 +613,56 @@ footer a:focus {
 }
 /*////////////////////////////////////*/
 
-.x::before {
-  transform: scaleX(0);
-  transform-origin: bottom right;
+/* .center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, #eeeeee, #4d4138);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
 }
 
-.x:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.x::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  inset: 0 0 0 0;
-  background-color: #4d4138;
-  z-index: 100;
-  transition: transform 0.6s ease;
-}
-
-.x {
-  position: relative;
-}
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+} */
