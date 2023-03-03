@@ -472,7 +472,7 @@ footer img {
 
   .learn-more {
     padding: 0% 10%;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30%;
     grid-column-gap: 2em;
     margin-bottom: 6em;
   }
