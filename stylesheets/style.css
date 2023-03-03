@@ -472,8 +472,8 @@ footer img {
 
   .learn-more {
     padding: 0% 10%;
-    grid-template-columns: auto;
-    grid-column-gap: 4em;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 2em;
     margin-bottom: 6em;
   }
 
@@ -510,8 +510,34 @@ footer img {
     margin-bottom: 15em;
   }
 
+  .logo {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 65px;
+  }
+
   .learn-more {
     grid-column-gap: 8em;
+  }
+
+  .icon-container {
+    height: 95px;
+    width: 95px;
+  }
+
+  .icon {
+    width: 3em;
+    height: 3em;
+  }
+
+  .card {
+    padding-top: 3em;
+  }
+
+  .card p {
+    padding: 0% 10%;
   }
 
   nav {
