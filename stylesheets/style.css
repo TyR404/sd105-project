@@ -565,3 +565,18 @@ footer img {
 ::-webkit-scrollbar-thumb:hover {
   background: #847a6f;
 }
+
+header a:hover {
+  animation: x 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+header a:focus {
+  text-decoration: underline;
+}
+
+@keyframes x {
+  0% {
+    border-left: #4d4138 solid 1px;
+    border-right: #4d4138 solid 1px;
+  }
+}
