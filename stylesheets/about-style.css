@@ -2,8 +2,8 @@ header {
   margin-bottom: 2.25em;
 }
 
-.about {
-  padding: 0% 5%;
+main {
+  padding: 0% 5% 0% 5%;
 }
 
 .profile {
@@ -15,9 +15,36 @@ header {
 }
 
 .about-h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 p {
   margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto;
+    padding: 0% 5% 0% 0%;
+  }
+
+  .about {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .profile {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
 }
