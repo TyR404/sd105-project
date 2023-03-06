@@ -316,7 +316,7 @@ footer img {
 }
 
 header a:hover {
-  animation: header-a-hover 3s ease-in-out;
+  animation: header-a-hover ease-in-out;
   animation-fill-mode: forwards;
 }
 header a:focus {
@@ -325,6 +325,8 @@ header a:focus {
 
 @keyframes header-a-hover {
   0% {
+  }
+  100% {
     border-left: #4d4138 solid 1px;
     border-right: #4d4138 solid 1px;
   }
