@@ -7,10 +7,10 @@ h2 {
 }
 
 .sample-div {
+  margin: auto;
   height: 50em;
   margin-bottom: 2em;
   width: 80%;
-  margin: auto;
 }
 
 .sample {
