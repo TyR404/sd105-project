@@ -23,7 +23,10 @@ function right() {
 
 function render() {
   let image = document.querySelector(".sample");
+  let imageLink = document.querySelector(".image-link");
+
   image.src = samples.picture + samples.currentPicture + ".png";
+  imageLink.href = samples.picture + samples.currentPicture + ".png";
 }
 
 document.querySelector(".left").addEventListener("click", left);
