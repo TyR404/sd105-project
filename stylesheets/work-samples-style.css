@@ -2,6 +2,22 @@ header {
   margin-bottom: 2em;
 }
 
+h2 {
+  margin-bottom: 0.5em;
+}
+
+.sample-div {
+  height: 50em;
+  margin-bottom: 2em;
+}
+
+.sample {
+  width: 80%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
 .controller {
   display: flex;
   justify-content: space-between;

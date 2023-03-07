@@ -1,6 +1,6 @@
 let samples = {
   picture: "/pictures/sample-",
-  currentPicture: 1,
+  currentPicture: 3,
 };
 
 function left() {
