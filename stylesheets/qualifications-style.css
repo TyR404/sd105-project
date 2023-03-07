@@ -10,7 +10,7 @@ header {
   display: block;
   position: relative;
   text-align: center;
-  padding-top: 15%;
+  padding: 3em 1em 2em 2em;
   border: #4d4138 solid 1px;
   width: 80%;
   margin: 0 10%;
@@ -60,11 +60,38 @@ header {
 }
 
 .card ul {
-  margin-bottom: 1.5em;
+  text-align: left;
 }
 
 .card li {
-  margin-bottom: 1em;
   width: 80%;
   margin: auto;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+  }
+
+  .card-container .card:nth-child(odd) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .card-container .card:nth-child(even) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .card-container .card:last-child {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-container {
+    padding: 0% 10%;
+  }
 }
