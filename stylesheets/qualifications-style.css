@@ -74,6 +74,7 @@ header {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto auto;
+    padding: 0% 10%;
   }
 
   .card-container .card:nth-child(odd) {
@@ -87,11 +88,5 @@ header {
   .card-container .card:last-child {
     grid-column-start: 2;
     grid-column-end: 4;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .card-container {
-    padding: 0% 10%;
   }
 }
