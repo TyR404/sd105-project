@@ -141,12 +141,20 @@ main {
   right: 0;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 @media screen and (max-width: 768px) {
   .timeline::before {
     left: 3.1em;
   }
   main {
     padding: 0;
+  }
+
+  .timeline-img-header h3 {
+    bottom: -0em;
   }
 
   .container {
