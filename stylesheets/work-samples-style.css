@@ -5,66 +5,181 @@ header {
 h2 {
   margin-bottom: 0.5em;
 }
-
-.sample-div {
-  margin: auto;
-  margin-bottom: 2em;
-  width: 80%;
+.timeline {
+  position: relative;
+  padding: 100px 0;
+}
+main {
+  padding: 5%;
 }
 
-.sample {
+.timeline::before {
+  content: "";
+  background: #4d4138;
+  width: 0.4em;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
   width: 100%;
-  height: 7.5em;
+  margin-bottom: 3em;
 }
 
-.controller {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
 }
 
-.controller img {
-  width: 100%;
-  filter: invert(98%) sepia(8%) saturate(372%) hue-rotate(224deg)
-    brightness(109%) contrast(87%);
+.timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 1.9em;
+  right: -0.9em;
+  border-width: 0.7em 0 0.7em 1em;
+  border-color: transparent transparent transparent #4d4138;
 }
 
-.left,
-.right {
-  width: 6em;
-  background-color: #4d4138;
-  padding: 0.25em 2em;
-  border-radius: 25px;
-  margin-bottom: 2em;
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 1.9em;
+  left: -0.9em;
+  border-width: 0.7em 1em 0.7em 0;
+  border-color: transparent #4d4138 transparent transparent;
 }
 
-@media only screen and (min-width: 768px) {
-  .sample {
-    height: 20em;
+.timeline-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  background: #eeeeee;
+  box-shadow: 0 1em 2em -1em #4d4138;
+}
+
+.timeline-img {
+  width: 2em;
+  height: 2em;
+  background: #4d4138;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 1.5em;
+  margin-left: -1em;
+}
+
+.timeline-card a {
+  margin-left: 1.5em;
+  background: #4d4138;
+  color: #eeeeee;
+  padding: 0.65em 1.5em;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+}
+
+.timeline-card a:hover,
+.timeline-card a:active,
+.timeline-card a:focus {
+  background: #eeeeee;
+  color: #4d4138;
+  text-decoration: none;
+  box-shadow: 0 6px 20px 2px rgba(0, 0, 0, 0.6);
+}
+
+.timeline-card {
+  padding: 0 !important;
+}
+
+.timeline-card p {
+  padding: 0 1em;
+}
+
+.timeline-item .timeline-img-header {
+  background: url("https://picsum.photos/1000/800/?random") center center
+    no-repeat;
+  background-size: cover;
+}
+
+.timeline-img-header {
+  height: 12em;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.timeline-img-header h3 {
+  color: #fff;
+  position: absolute;
+  bottom: -0.25em;
+  left: 1em;
+  font-size: 25px;
+}
+
+.date {
+  background: #4d4138;
+  display: inline-block;
+  color: #eeeeee;
+  padding: 0.65em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 3.1em;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  .sample {
-    height: 25em;
+  main {
+    padding: 0;
   }
-  .controller {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: auto;
-  }
-}
 
-@media only screen and (min-width: 1440px) {
-  .sample {
-    height: 35em;
+  .container {
+    width: 70%;
   }
-}
 
-@media only screen and (min-width: 1880px) {
-  .sample {
-    height: 45em;
+  .timeline-item {
+    width: 100%;
+  }
+
+  .timeline .timeline-img {
+    left: 3.1em;
+  }
+
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: 15em;
+    margin-left: 5.5em;
+  }
+
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 1.95em;
+    left: -0.9em;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #4d4138 transparent transparent;
   }
 }
