@@ -2,12 +2,9 @@ header {
   margin-bottom: 2em;
 }
 
-h2 {
-  margin-bottom: 0.5em;
-}
 .timeline {
   position: relative;
-  padding: 100px 0;
+  padding: 4em 0;
 }
 main {
   padding: 5%;
